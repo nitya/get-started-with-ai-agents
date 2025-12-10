@@ -1,0 +1,25 @@
+# Documentation
+mkdocs-material>=9.5.0
+
+# Azure AI SDKs
+azure-ai-projects>=2.0.0b2
+azure-ai-inference>=1.0.0b7
+azure-identity>=1.19.0
+azure-core>=1.36.0
+
+# Azure OpenAI
+openai>=1.0.0
+
+# Azure Search
+azure-search-documents>=11.4.0
+
+# Azure Monitor
+azure-monitor-opentelemetry>=1.8.0
+azure-monitor-opentelemetry-exporter>=1.0.0b44
+
+# Python utilities
+python-dotenv>=1.0.0
+
+# Jupyter support
+ipykernel>=6.29.0
+jupyter>=1.0.0

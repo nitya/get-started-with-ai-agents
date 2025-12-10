@@ -1,0 +1,89 @@
+site_name: Microsoft Foundry Demos - AI Summit NYC 2026
+site_description: Hands-on labs and demos for Microsoft Foundry at AI Summit NYC 2026
+site_author: Microsoft
+
+# Repository
+repo_name: nitya/get-started-with-ai-agents
+repo_url: https://github.com/nitya/get-started-with-ai-agents
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 Microsoft
+
+# Theme configuration
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+
+# Navigation
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Azure Account Setup: azure_account_setup.md
+      - Local Development: local_development.md
+      - Deployment: deployment.md
+  - AI Search: ai_search.md
+  - Authentication:
+      - Create App Registration: create_new_app_registration.md
+      - Azure App Service Auth Setup: azure_app_service_auth_setup.md
+  - Customization:
+      - Deploy Customization: deploy_customization.md
+  - Observability: observability.md
+  - Sample Questions: sample_questions.md
+  - Troubleshooting: troubleshooting.md
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nitya/get-started-with-ai-agents
+    - icon: fontawesome/brands/microsoft
+      link: https://www.microsoft.com
